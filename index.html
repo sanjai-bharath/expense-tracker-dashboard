@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Expense Tracker UI</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="container">
+
+    <!-- Top Card -->
+    <div class="top-card">
+        <p>Financial Report, December 25, 2026</p>
+    </div>
+
+    <!-- Main Card -->
+    <div class="main-card">
+
+        <p class="label">Current Money</p>
+        <h1>$ 536.67</h1>
+
+        <button class="details-btn">Details</button>
+
+        <!-- Category Buttons -->
+        <div class="buttons">
+            <button>Daily Bills</button>
+            <button>Vehicle</button>
+            <button>Meal Cost</button>
+        </div>
+
+        <!-- Add Button -->
+        <div class="plus-btn" onclick="openPopup()">+</div>
+
+        <p class="bottom-text">Add custom data</p>
+
+    </div>
+
+</div>
+
+<!-- Popup (Optional Feature) -->
+<div class="popup" id="popup">
+    <div class="popup-content">
+        <h3>Add Expense</h3>
+        <input type="text" placeholder="Enter amount">
+        <br><br>
+        <button onclick="closePopup()">Save</button>
+    </div>
+</div>
+
+<!-- JavaScript (OPTIONAL - remove for submission) -->
+<script>
+function openPopup() {
+    document.getElementById("popup").style.display = "flex";
+}
+
+function closePopup() {
+    document.getElementById("popup").style.display = "none";
+}
+</script>
+
+</body>
+</html>
